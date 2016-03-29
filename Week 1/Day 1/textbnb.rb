@@ -77,8 +77,8 @@ price_house = homes.find do |home|
 end
 
 if price_house != nil
+  puts "\nThe first Home that's $" + user_price.to_s + " is:"
 	puts price_house.name
 else
 	puts "There are no homes for that price"
 end
-
