@@ -34,19 +34,27 @@ end
 sorted_by_price_homes = homes.sort {|x,y| x.price <=> y.price}
 print_array(sorted_by_price_homes)
 
-puts "\nEnter 'high-price', 'low-price', 'high-cap', or 'low-cap':"
-answer = gets.chomp
+answer = "nothing"
+while answer != "exit"
+  puts "\nEnter 'high-price', 'low-price', 'high-cap', or 'low-cap':"
+  answer = gets.chomp
 
-if answer == "" || answer == "low-price"
-	sorted_categ = sorted_by_price_homes
-elsif answer == "high-price"
-	 sorted_categ = homes.sort {|x,y| y.price <=> x.price}
-elsif answer == "high-cap"
-	sorted_categ = homes.sort {|x,y| y.capacity <=> x.capacity}
-elsif answer == "low-cap"
-	sorted_categ = homes.sort {|x,y| x.capacity <=> y.capacity}
-else 
-	puts "invalid response"
+  if answer == "" || answer == "low-price"
+  	sorted_categ = sorted_by_price_homes
+    answer = "exit"
+  elsif answer == "high-price"
+    sorted_categ = homes.sort {|x,y| y.price <=> x.price}
+    answer = "exit"
+  elsif answer == "high-cap"
+  	sorted_categ = homes.sort {|x,y| y.capacity <=> x.capacity}
+    answer = "exit"
+  elsif answer == "low-cap"
+  	sorted_categ = homes.sort {|x,y| x.capacity <=> y.capacity}
+    answer = "exit"
+  else 
+  	puts "invalid response"
+    answer = "nothing"
+  end
 end
 
 puts "\n\nHOME LIST Organized by " + answer + ":\n" 
