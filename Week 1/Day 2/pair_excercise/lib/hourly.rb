@@ -1,4 +1,6 @@
 #hourly class
+require_relative "hourly_module.rb"
+
 
 class HourlyEmployee < Employee
     def initialize(name, email, hourly_rate, hours_worked)
@@ -7,7 +9,11 @@ class HourlyEmployee < Employee
         @hours_worked = hours_worked
     end
 
+    include HourlyPay
+
     def calculate_salary
-    	paycheck = @hourly_rate * @hours_worked
+    	hourly_pay
     end
+
+    
 end
