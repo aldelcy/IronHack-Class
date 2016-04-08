@@ -2,7 +2,7 @@ require "sinatra"
 require "sinatra/reloader"
 require_relative "lib/passwordchecker.rb"
 
-enable(:session)
+enable(:sessions)
 
 get "/?" do
 	erb(:signup)	

@@ -2,7 +2,7 @@ require_relative "../app.rb"
 require "rspec"
 require "rack/test"
 
-describe 'servver service' do
+describe 'Server Service' do
 	
 	include Rack::Test::Methods
 
