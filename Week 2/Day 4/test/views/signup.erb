@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <title>Password Checker</title>
+</head>
+<body>
+	<h1>Awesome Password Checker</h1>
+	<form method="post" action="/">
+		<input type="text" name="email" placeholder="enter email" value="mike@gmail.com">
+		<input type="text" name="password" placeholder="enter password">
+		<button type="submit" name="check" value="check">Check</button>
+	</form>
+	<% if @submit == "check" %>
+		<br>
+		Message: <%= @result %>
+		<% if @result == "valid" %>
+			<h2>CONGRATS</h2>
+			<img src="/puppy.jpg" width="500">
+		<% end %>
+	<% end %>
+</body>
+</html>

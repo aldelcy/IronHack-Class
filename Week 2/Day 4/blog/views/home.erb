@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+  <title>Al's Blog</title>
+</head>
+<body>
+	<h1>Al's BLOG</h1>
+	<% @posts.each do |entry| %>
+		<%= entry.title %><br>
+		<%= entry.date_time %><br>
+		---------------------<br>
+		<%= entry.content %><br><br>
+	<% end %>
+</body>
+</html>
