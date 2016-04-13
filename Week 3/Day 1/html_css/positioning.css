@@ -1,0 +1,30 @@
+/*CSS*/
+code{
+	background:#2db34a;
+	border-radius: 6px;
+	color: #fff;
+	display: block;
+	padding: 24px 15px;
+	text-align: center;
+	overflow: auto;
+}
+
+header,
+section,
+aside,
+footer{
+	margin: 0 1.5% 24px 1.5%;
+}
+
+aside{
+}
+
+section{
+}
+
+footer{
+}
+
+img{
+	float: right;
+}

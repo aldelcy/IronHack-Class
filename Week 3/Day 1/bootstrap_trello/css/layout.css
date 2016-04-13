@@ -1,0 +1,107 @@
+body{
+	background-image: url('../img/bg1.jpg');
+	background-size: 100%;
+}
+
+.head_nav{
+	background-color: rgba(0,0,0,.2);
+	padding: 5px 0;
+}
+
+.nav_button {
+    background: 0 0;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 15px;
+    margin: 0 5px 0 0;
+    padding: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav_button:hover {
+    background-color: rgba(255,255,255,.2);
+    color: #fff;
+    opacity: 1 !important;
+}
+.nav2_button {
+    background: 0 0;
+    border-radius: 3px;
+    color: #ddd;
+    display: inline-block;
+    font-size: 11px;
+    height: auto;
+    line-height: 11px;
+    margin: 0 5px 0 0;
+    padding: 6px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+.nav2_button:hover {
+    background-color: rgba(0,0,0,.2);
+    color: #fff;
+    opacity: 1 !important;
+}
+
+.side_menu{
+	background-color: #edeff0;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 339px;
+    z-index: 5;
+    top: 45px;
+	padding: 5px 10px;
+	margin:0 5px;
+	box-shadow: 0 0 6px rgba(0,0,0,.4);
+}
+
+span.title{
+	font-size: 15px; font-weight: bolder; 
+	vertical-align:middle; 
+	display: table-cell; width:120px;
+}
+.boards{
+	background-color: #d9d9d9;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin:0 5px;
+	box-shadow: 1px 1px #999;
+	width: 250px;
+}.boards span.title{ color: #000; font-weight: bolder; font-size: 12px;}
+
+.boards .list{
+	background-color: #eee;
+	box-shadow: 1px 1px #ccc;
+	background-color: #fff;
+	border-radius: 3px;
+	margin:5px 0;
+}.boards .list .text{
+	padding: 5px;
+	font-size: 12px;
+	color: #666;
+}.boards .list:hover{
+	background-color: #eee;
+}
+
+.tag{
+	width: 100%;
+
+}
+.tag .tag_note{
+	border-radius: 3px;
+	padding: 3px;
+	max-width: 40px;
+	height:  6px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}.tag .tag_note.red{
+	background-color: red;
+}.tag .tag_note.green{
+	background-color: green;
+}.tag .tag_note.blue{
+	background-color: blue;
+}
