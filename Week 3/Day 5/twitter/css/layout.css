@@ -1,0 +1,124 @@
+body{
+	background-color:none;
+}
+
+.header{
+	padding: 5px 0 10px;
+	background-color: #fff; 
+}
+
+
+.nav_link{
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 13px;
+    height: auto;
+    line-height: 11px;
+    margin: 5px 2px 5px 0;
+    padding: 6px 3px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+
+.nav_line, .nav_right input{
+    display: inline-block;
+    margin: 0 5px 0;
+    padding: 6px;
+    text-decoration: none;
+    float: right;
+}
+.nav_right input{
+	border-radius: 10px;
+	border:1px #999 solid;
+	padding: 5px 10px;
+	height: 35px;
+}
+
+
+.profilepic{
+	border-radius: 5px;
+	border:2px #ccc solid;
+	float: right;
+	height: 35px;
+	width: 35px;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden; 
+
+}
+
+.twitter_profile{
+	border-radius: 15px;
+	border:1px #fff solid;
+	height: 200px;
+	width: 200px;
+	padding: 5px;
+	background-color: #fff;
+	overflow: hidden;
+	margin-bottom: 5px;
+
+}.twitter_pic{
+	border-radius: 12px;
+	border:1px #ccc solid;
+	height: 188px;
+	width: 188px;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden; 
+
+}
+
+.twitter_info{
+	position: relative;
+	top: -150px;
+	left: 0px;
+	height: 100%;
+}
+
+.info_menu{
+	height: auto;
+	background-color: #e3e3e3;
+	border-bottom: 1px solid #ccc;
+	padding-top: 5px;
+}
+li.info_link{
+    color: #000;
+    display: inline-block;
+    text-align: center;
+    min-width: 70px; 
+    font-size: 13px;
+    height: auto;
+    line-height: 11px;
+    margin: 0 5px;
+    padding: 6px 3px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+}
+li.info_link .stat_num{
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px 0 10px;
+	border-bottom: 3px #e3e3e3 solid;
+}li.info_link .stat_num:hover{
+	border-bottom: 3px blue solid;
+}
+
+
+.top_image{
+	background-position:top center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 350px;
+}
+
+.tweets{
+	margin: 3px auto;
+	width: 450px;
+	background-color: #eee;
+	border: #ddd 1px solid;
+	border-radius: 5px; 
+	padding: 5px;
+}

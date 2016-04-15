@@ -1,4 +1,3 @@
-var vikings = require("./viking.js");
 var viking_pit = require("./viking.js");
 
 function Pit(v1, v2){
@@ -17,10 +16,29 @@ function Pit(v1, v2){
 				console.log("-----");
 				turn ++;
 			};
+
+			if(v1_hlth>v2_hlth){
+				console.log(v1.name+" WINS");
+			}else{
+				console.log(v2.name+" WINS");
+			}
+
 		// console.log(viking_pit);
 	}, 3000);
-	console.log("FIGHTING...\n\n");
+	console.log("FIGHTING..."+v1.name+" vs "+v2.name+"\n\n");
 }
 
+function chooseFighers(){
+	var rand1 = Math.floor(Math.random()*viking_pit.length);
+	var rand2 = Math.floor(Math.random()*viking_pit.length);
+	rand_viks = [rand1, rand2];
+	return rand_viks;
+};
 
-Pit(vikings[0], vikings[1]);
+chooseFighers();
+
+if( rand_viks[0]!==rand_viks[1]){
+	Pit(viking_pit[rand_viks[0]], viking_pit[rand_viks[1]]);
+}else{
+	chooseFighers();
+}
