@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <title>To Do List</title>
+</head>
+<body>
+
+	<% if session[:user] %>
+
+		<h1><%= session[:user]+"'s" %> To Do List</h1>
+		<form  action="/add_task" method="post">
+			<label for="tasks">Enter task here:</label><br><br>
+			<input type="text" id="task" name="task_name" value="walk dog" size="40"><br><br>
+			<input type="text" id="task" name="task_desc" value="Take dog to the park" size="70"><br><br>
+			<button type="submit" name="submit_task" value="submitted">SUBMIT</button>
+		</form>
+
+	<% else %>
+
+		<h1>Let's get your name</h1>
+		<form action="/" method="post">
+			<label for="user">Enter a name below:</label><br><br>
+			<input type="text" id="user" name="user_name" value="Al Delcy" size="40"><br><br>
+			<button type="submit" name="create" value="submit_user">CREATE USER</button>
+		</form>
+
+	<% end %>
+
+</body>
+</html>

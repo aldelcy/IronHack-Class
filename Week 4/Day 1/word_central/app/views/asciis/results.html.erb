@@ -1,0 +1,13 @@
+<h3>Text: </h3>
+<br>"<%= @text %>" <br><br>
+
+The text has: "<%= @word_count %>" words<br>
+It would take an average human <%= @time_t_count%> mins to read.
+
+
+<h4> Frequency:</h4>
+<%= @freqs_reverse[0..9] %>
+
+<br><br>
+
+<%= link_to 'Back to Home', home_path %>
