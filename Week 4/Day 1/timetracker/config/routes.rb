@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get '/calculator' => 'site#calculator'
   post '/calculate' => 'site#calculate'
   get '/projects', to: 'projects#index'
+  get '/projects/:id', to: 'projects#show'
 
 end
