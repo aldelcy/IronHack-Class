@@ -1,0 +1,11 @@
+<h1><%= @my_project.name %></h1>
+
+<ul>
+	<%@my_entries.each do |entry|%>
+		<li> 
+			<%= entry.hours %> hr 
+			<%= entry.minutes %> mns
+			<%= entry.date %>
+		</li>
+	<%end%>
+</ul>

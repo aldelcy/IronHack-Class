@@ -1,0 +1,10 @@
+<h2>Create a new Product:</h2>
+
+<%= form_for @new_product do |p| %>
+	<%= p.text_field :title, placeholder:'Product title' %><br><br>
+	<%= p.text_area :description, size: "40x10", placeholder:'Product Description' %><br>
+	<br>
+	<%= p.label :deadline, value:'Set a deadline:' %><br>
+	<%= p.datetime_select :deadline %><br><br>
+	<%= p.button%>
+<% end %>
