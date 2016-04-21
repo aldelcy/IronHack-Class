@@ -1,0 +1,10 @@
+<b><%= @prod.title %></b><br>
+<%= @prod.description %><br>
+---------------<br><br>
+
+<%= form_for [@prod, @new_bid] do |b| %>
+	<input name="user_email" placeholder="enter your email here"><br>
+	-----------<br>
+	<%= b.text_field :user_bid, placeholder:'Place bid' %>
+	<%= b.submit %>
+<%end%>
