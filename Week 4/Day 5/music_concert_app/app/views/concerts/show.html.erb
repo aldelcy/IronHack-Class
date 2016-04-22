@@ -1,0 +1,58 @@
+<%= render "header" %>
+<div class='container'>
+	<h1><%= @current_concert.name %></h1>
+	<b>Artist: <%= @current_concert.artist %></b>
+	<hr>
+	<h4><b>Description:</b></h4>
+	<h4><%= @current_concert.description %></h4>
+	<br>
+	<%= @current_concert.date.hour %>h<%= @current_concert.date.min %> mins <%= @current_concert.date.strftime("%p") %><br>
+	<b>
+		<% if @current_concert.date.hour > @this_hour %>
+			in <%= @current_concert.date.hour-@this_hour %> hrs
+		<% else %>
+			Already over
+		<%end%>
+	</b>
+
+	<br>--------<br>
+	Venue: <%= @current_concert.venue %><br>
+	City: <%= @current_concert.city %><br>
+	Price: $<%= @current_concert.price %>
+	<hr>
+</div>
+
+
+
+<div class='container'>
+<h4><b>Comments:</b></h4>
+
+	------------------<br>
+	
+	<% if @comments %>
+		<% @comments.each do |comment| %>
+			<b><%= comment.user_name %></b><br>
+			<%= comment.comment %><br><br>
+		<%end%>
+	<% else %>
+		No Comments yet
+	<%end%>
+	
+	<br>------<br>
+	<% if @new_comment.errors.any? %>
+	  <ul>
+	    <% @new_comment.errors.full_messages.each do |error_msg| %>
+	      <li><%= error_msg %></li>
+	    <% end %>
+	  </ul>
+	<% end %>
+
+	<%= form_for [@current_concert, @new_comment] do |com| %>
+		<%= com.text_field :user_name, placeholder:'Put your name here' %><br>
+		<%= com.text_area :comment, size:"30x10", placeholder:'comment here' %><br>
+		<input type="hidden" name='concert_id' value='<%= @current_concert.id %>' >
+		<%= com.submit 'Comment' %>
+	<%end%>	
+
+	
+</div>

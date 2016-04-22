@@ -1,0 +1,51 @@
+<%= render "header" %>
+
+<div class='container'>
+	<div class='row'>
+
+
+
+
+
+		<div class='col-sm-3' style='background-color:#ccc;'>
+			<h3>Coming Up:</h3>
+			<hr>
+			<% @concerts_coming.each do |c|  %>
+
+				<a href="/concerts/<%= c.id%>"><b><%= c.name %></b></a><br>
+				Artist: <%= c.artist %><br>
+				-------<br>
+
+				Date: <%= c.date %><br><br><br>
+
+			<% end %>
+		</div>
+
+
+
+
+
+
+		<div class='col-sm-9'>
+			<h2>TODAY:</h2>
+			<hr>
+			<% @concerts_today.each do |c|  %>
+
+				<a href="/concerts/<%= c.id%>"><b><%= c.name %></b></a><br>
+				Artist: <b><%= c.artist %></b><br>
+				-------<br>
+				<%= c.description %><br>
+				<b>
+					<% if c.date.hour > @this_hour %>
+						Today at: <%= c.date.hour %>h<%= c.date.min %> mins <%= c.date.strftime("%p") %><br>
+						in <%= c.date.hour-@this_hour %> hrs
+					<% else %>
+						Already over
+					<%end%>
+				</b>  
+				<br><br><br><br>
+
+			<% end %>
+		</div>
+	</div>
+</div>

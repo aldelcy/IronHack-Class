@@ -1,0 +1,3 @@
+time = Time.now
+
+time
