@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spotify</title>
+	
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+	<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="spotify.js"></script>
+	
+	<style type="text/css">
+		.artists{
+			width:97%;
+			float:none;
+			padding:5px;
+			margin:3% 0;
+		}
+		.artist_name{
+			font-size:17px;
+			font-weight:bold;
+		}.artist_name a{
+			text-decoration:none;
+		}
+		.artist_type{
+			font-size:18px;
+			font-weight:bold;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="container" style="text-align: center; padding-top:30px; ">
+		<form class="js-form">
+			<div class="col-xs-4" style="float: none; display: inline-block;">
+				<input class='js-artist form-control' name='artist' placeholder='Enter Artist Name' value="">
+			</div>
+			<div class="col-xs-1" style="float: none; display: inline-block;">
+				<button class='js-submit-artist btn btn-primary'> Submit </button>
+			</div>
+		</form>
+	</div>
+
+
+	<div class="container">
+		<div class='col-xs-3 js-list' style="overflow: hidden; text-align: left;">
+			
+		</div>
+		<div class='col-xs-4 js-album-artist' style="padding-top: 20px;">
+			
+		</div>
+		<div class='col-xs-5'>
+			
+		</div>
+	</div>
+
+	<!-- <input id='' name='' placeholder=''> -->
+</body>
+</html>
