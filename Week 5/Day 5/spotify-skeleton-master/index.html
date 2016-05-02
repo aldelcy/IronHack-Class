@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+	<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+	
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script   src="player.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="container" style="text-align: center;">
+		<input class="js-track form-control" style="width: 300px; float: none; margin: 10px auto;" placeholder="search track" value="refuse">
+		<button class="js-track-submit btn btn-primary">Search</button>
+	</div>
+	<div class="widget">
+		<div class="header">
+			<div name='play-btn' class="btn-play disabled"></div>
+
+				<audio class="js-audio" src=" "></audio>
+
+				<div class="metadata">
+				  <p class="title">Track Name</p>
+				  <p class="author">Artist</p>
+
+				  <div class="seekbar">
+				    <progress class="js-bar" value="" max="100"></progress>
+				  </div>
+				</div>
+			</div>
+
+		<div class="cover">
+			<img class="js-image" src="cover.jpg">
+		</div>
+
+		<div class="js-info-btn"></div>
+
+
+		<div class="modal fade js-modal">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+
+		      <div class="modal-header">
+		        <!-- Close button -->
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span>&times;</span>
+		        </button>
+
+		        <h2 class="modal_title"></h2>
+		      </div>
+
+		      <div class="modal-body">
+		        <div class="js-artist-info"></div>
+		      </div>
+
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		
+	</div>
+
+	<div class="container" style="text-align: center; margin-top: 30px;">
+		<span class="more_btn"></span>
+		<div class="more">
+		</div>
+	</div>
+
+</body>
+</html>

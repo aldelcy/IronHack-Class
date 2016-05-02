@@ -14,7 +14,7 @@
 
 
 <!-- Pokemon modal view (hidden at first) -->
-<div class="modal fade">
+<div class="modal fade js-pokemon-modal">
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -24,19 +24,49 @@
         </button>
 
         <h3 class="modal-title">
-          <span>Feraligtr</span>
-          <small>#160</small>
+          <span class="js-pkmn-name"></span>
+          <small class="js-pkmn-number"></small>
         </h3>
       </div><!-- .modal-header -->
 
-      <div class="modal-body">
-        <dl class="dl-horizontal">
-          <dt>Height</dt>
-          <dd>23</dd>
+      <div class="modal-body" style="overflow: hidden;">
 
-          <dt>Weight</dt>
-          <dd>888</dd>
-        </dl>
+        <div class="col-xs-4">
+          <div class="js-image"></div>
+        </div>
+        <div class="col-xs-4">
+          <b>TYPES:</b><br>
+          <span class="js-pkmn-types"></span>
+          <hr>
+        
+        
+          <dl class="dl-horizontal">
+            <dt>Height</dt>
+            <dd class="js-pkmn-height"></dd>
+
+            <dt>Weight</dt>
+            <dd class="js-pkmn-weight"></dd>
+
+            <dt>Hit Point</dt>
+            <dd class="js-pkmn-hp"></dd>
+
+            <dt>Attack</dt>
+            <dd class="js-pkmn-attack"></dd>
+
+            <dt>Defense</dt>
+            <dd class="js-pkmn-defense"></dd>
+
+            <dt>Special Attack</dt>
+            <dd class="js-pkmn-sp_atk"></dd>
+
+            <dt>Special Defense</dt>
+            <dd class="js-pkmn-sp_def"></dd>
+
+            <dt>Speed</dt>
+            <dd class="js-pkmn-speed"></dd>
+          </dl>
+
+        </div>
       </div><!-- .modal-body -->
 
     </div><!-- .modal-content -->
