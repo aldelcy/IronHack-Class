@@ -31,7 +31,7 @@ class SandwichesController < ApplicationController
 	private
 
 	def load_sandwich
-		sandwich = Sandwich.find_by(id: params:[:id])
+		sandwich = Sandwich.find_by(id: params[:id])
 
 		if sandwich.nil?
 			render json: {error: "sandwich not found"}, status: 404
